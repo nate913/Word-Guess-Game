@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hangman Game</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+	<link rel="stylesheet" href="assets/style/style.css">
+
+</head>
+<body onload="pickAWord()">
+	<div class="container-fluid">
+		<div class="jumbotron text-center">
+  			<h1>ANIME HANGMAN!!!</h1>
+  		</div>
+  		<div class="row">
+  			<div class="col-md-6 col-sm-12">
+  				<div class="panel panel-default">
+  					<div class="panel-body">
+  						<div class="row">
+  							<div class="col-md-6 col-sm-6">
+  								<figure>
+	  								<img class="img-responsive" src="assets/images/hangman.jpg">
+	  								<figcaption>Artist: Samantha Siebert</figcaption>
+  								</figure>
+  							</div>
+  							<div class="col-md-offset-1 col-md-5 col-sm-6">
+  								<canvas id="imgCanvas" width="200" height="350"></canvas>
+  								<p id="userMessage" class="messageText"></p>
+  							</div>
+  						</div>	
+  					</div>
+    				<div class="panel-footer" id="audioFrame">
+    					<audio controls id="h2O">
+    						<source src="assets/audio/Sweet Victory.mp3" type="audio/mpeg">
+						</audio>
+    				</div>
+				</div>
+  			</div>
+  			<div class="text-center col-md-6 col-sm-12">
+				<div class="panel panel-default">
+  					<div class="panel-body">
+    					<h3>Press any key to get started!</h3>
+						<h4>Wins:</h4>
+						<p id="totalWins"></p>
+						<h4>Current Word</h4>
+						<p id="currentWord" class="guessWord"></p>
+						<h4>Number of guesses remaining:</h4>
+						<p id="numOfGuesses"></p>
+						<h4>Letters already guessed</h4>
+						<div class="well" id="lettersGuessed"></div>
+						<button id="nextWord" class="generateWord">Next Word</button>
+						<p id="dispMessage"></p>
+					</div>
+				</div>
+			</div>
+  		</div>
+
+	 </div>
+	 <script src="assets/javascript/game.js"></script>
+</body>
+</html>
