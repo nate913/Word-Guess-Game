@@ -1,1 +1,1 @@
-# word-guess-game
+This is a anime based hangman game. The object of the game is to guess the word in 12 guesses or less. If you guess the word correctly a song plays. Each letter you get wrong will display a body part on the gallows. If you guess a letter multiple times an alert will display telling you to choose another letter, and if you can't guess the word in 12 guesses you will complete the hangman and it's game over.
